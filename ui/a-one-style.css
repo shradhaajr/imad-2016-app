@@ -1,2 +1,17 @@
-<h3>
-</h3>
+body {
+    font-family: sans-serif;
+    background-color: yellow;
+    background-color: rgba(255, 235, 59, 0.48);
+    margin-top: 75px;
+}
+
+h3 {
+    color: #295f35;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+p {
+    color: #295f35;
+    font-size: 150%;
+}
