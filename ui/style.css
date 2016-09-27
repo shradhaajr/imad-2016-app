@@ -21,3 +21,31 @@ body {
     height: 200px;
 }
 
+.container{
+                max-width: 800px;
+                margin: 0 auto;
+                background-color: beige;
+                padding: 60;
+                font-family: sans-serif;
+}
+
+div{
+    display: block;
+}
+
+h1 {
+    color: #295f35;
+    font-weight: bold;
+    font-size: 300%;
+}
+
+h3 {
+    color: #295f35;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+p {
+    color: #295f35;
+    font-size: 150%;
+}
