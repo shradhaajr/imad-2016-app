@@ -29,6 +29,7 @@ div{
 .container{
                 max-width: 800px;
                 margin: 0 auto;
-                color: grey;
+                background-color: beige;
+                padding: 60;
                 font-family: sans-serif;
 }
