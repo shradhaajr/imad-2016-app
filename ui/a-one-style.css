@@ -15,3 +15,7 @@ p {
     color: #295f35;
     font-size: 150%;
 }
+
+div{
+    display: block;
+}
