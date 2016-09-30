@@ -1,16 +1,26 @@
 console.log('Loaded!');
 
-//change the text of the main-text div
-var element = document.getElementById('main-text');
-element.innerHTML = 'This is being set by Javascript!';
-
-//move image on clicking
-var img = document.getElementById('madi');
-var marginLeft = 0;
-function moveRight() {
-  marginLeft = marginLeft +1;
-  img.style.marginLeft = marginLeft + 'px';
-}
-img.onclick = function (){
-    var interval = setInterval(moveRight, 50);
+var button = document.getElementById("counter");
+button.onclick = function () {
+    
+    //create request
+    var request = new XMLHttpRequest();
+    
+    //capture the response and store it variable
+    request.onreadystatechange = function () {
+        if(request.readyState == XMLHttprequest.DONE) {
+            //take some action
+            if(request.status == 200) {
+                var counter = request.responseText;
+                var span = document.getElementById("count");
+                span.innerHTML = counter.toString();
+            }
+        }
+    };
+    
+    //make request
+    request.open('GET', 'http://shradhaajr.imad.hasura-app.io/counter', true);
+    request.send(null);
+    
+    
 };
