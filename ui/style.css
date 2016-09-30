@@ -25,7 +25,8 @@ body {
                 max-width: 800px;
                 margin: 0 auto;
                 background-color: beige;
-                padding: 60;
+                padding-right: 60;
+                padding-left: 60;
                 font-family: sans-serif;
 }
 
