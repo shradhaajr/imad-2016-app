@@ -7,6 +7,5 @@ element.innerHTML = 'This is being set by Javascript!';
 //move image on clicking
 var img = document.getElementById('madi');
 img.onclick = function (){
-  img.style.marginLeft = '100px';
-    
+    var interval = setInterval(moveRight, 100);
 };
