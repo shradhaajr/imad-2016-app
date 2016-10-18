@@ -41,20 +41,20 @@ h1 {
     color: #295f35;
     font-weight: bold;
     font-size: 200%;
-    padding: 10px;
+    padding-left: 10px;
 }
 
 h3 {
     color: #295f35;
     font-weight: bold;
     font-size: 150%;
-    padding: 10px;
+    padding-left: 10px;
 }
 
 p {
     color: #295f35;
     font-size: 100%;
-    padding: 10px;
+    padding-left: 10px;
 }
 
 img {
