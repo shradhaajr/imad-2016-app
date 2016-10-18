@@ -53,3 +53,7 @@ p {
     color: #295f35;
     font-size: 100%;
 }
+
+img {
+    padding: 20px;
+}
