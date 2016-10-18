@@ -23,7 +23,7 @@ body {
 
 .container{
                 max-width: 800px;
-                margin: 0 auto;
+                margin: 25px;
                 background-color: beige;
                 padding-right: 60;
                 padding-left: 60;
@@ -41,20 +41,17 @@ h1 {
     color: #295f35;
     font-weight: bold;
     font-size: 200%;
-    padding-left: 10px;
 }
 
 h3 {
     color: #295f35;
     font-weight: bold;
     font-size: 150%;
-    padding-left: 10px;
 }
 
 p {
     color: #295f35;
     font-size: 100%;
-    padding-left: 10px;
 }
 
 img {
