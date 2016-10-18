@@ -33,17 +33,32 @@ var submit=document.getElementById('submit_btn');
 submit.onclick= function() {
     //make a request to the server and send the name
     
-    //capture a list of names and render it as a list
-    var names= ['name1', 'name2', 'name3', 'name4'];
-    var list='';
+     //create request
+    var request = new XMLHttpRequest();
     
-    for(var i=0;i<names.length; i++)
-    {
-        list += '<li>' + names[i] + '</li>'; 
-    }
+    //capture the response and store it variable
+    request.onreadystatechange = function () {
+        if(request.readyState == XMLHttpRequest.DONE) {
+            //take some action
+            if(request.status == 200) {
+                //capture a list of names and render it as a list
+                var names= ['name1', 'name2', 'name3', 'name4'];
+                var list='';
+                
+                for(var i=0;i<names.length; i++)
+                {
+                    list += '<li>' + names[i] + '</li>'; 
+                }
+                
+                var ul = document.getElementById('namelist');
+                ul.innerHTML = list;
+            }
+        }
+    };
     
-    var ul = document.getElementById('namelist');
-    ul.innerHTML = list;
+    //make request
+    request.open('GET', 'http://shradhaajr.imad.hasura-app.io/submit-name?name=' + name, true);
+    request.send(null);
 };
 
 
