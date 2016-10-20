@@ -23,12 +23,12 @@ body {
 }
 
 .container{
-                width: 80%;
+                width: 70%;
                 margin: 0 auto;
                 background-color: linen;
                 padding: 30px 30px 30px 30px;
                 font-family: serif;
-                border-radius: 50%;
+                border-radius: 40%;
 }
 
 div{
