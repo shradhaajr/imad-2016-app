@@ -68,7 +68,7 @@ img {
 a {
     font-size: 200%;
     font-variant: small-caps;
-    color: chocolate;
+    color: inherit;
     padding: 10px;
     
 }
