@@ -11,34 +11,34 @@ var poems = {
         heading: ' ON THE RED BENCH',
         poets: 'Shradhaa',
         content: `<p>
-                        Two friends on a red bench\n
-                        Under the shed
-                        Away from the hustle and bustle
-                        Of daily school.
-                        Listening to silence
-                        In all its glorious muteness
-                        A ginger cat stalks past
-                        Interrupting.
-                        Its bottlebrush tail
-                        Puffed and straight.
-                        A toddler follows
-                        Waddling and wide-eyed.
-                        He must touch
-                        The strange fluffy thing.
-                        The friends watch.
-                        The cat streaks
-                        Up a tree.
-                        The toddler tries
-                        To follow suit.
-                        One friend calls out.
-                        She must.
-                        The child turns
-                        To the next distraction
-                        Waddling and wide-eyed.
-                         The cat has gone
-                        The toddler back to class.
-                        And the friends on the red bench
-                        Listening to silence.
+                        Two friends on a red bench <br>
+                        Under the shed <br>
+                        Away from the hustle and bustle <br>
+                        Of daily school. <br>
+                        Listening to silence <br>
+                        In all its glorious muteness <br>
+                        A ginger cat stalks past <br>
+                        Interrupting. <br>
+                        Its bottlebrush tail <br>
+                        Puffed and straight. <br>
+                        A toddler follows <br>
+                        Waddling and wide-eyed. <br>
+                        He must touch <br>
+                        The strange fluffy thing. <br>
+                        The friends watch. <br>
+                        The cat streaks <br>
+                        Up a tree. <br>
+                        The toddler tries <br>
+                        To follow suit. <br>
+                        One friend calls out. <br>
+                        She must. <br>
+                        The child turns <br>
+                        To the next distraction <br>
+                        Waddling and wide-eyed. <br>
+                         The cat has gone <br>
+                        The toddler back to class. <br>
+                        And the friends on the red bench <br>
+                        Listening to silence. <br>
                     </p>`
     },
     'poem-two': {
