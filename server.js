@@ -5,9 +5,9 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articles = {
-    'article-one': {
-        title: 'Article One| JS',
+var poems = {
+    'poem-one': {
+        title: 'Poem One| JS',
         heading: 'Article One',
         date: 'Sep 5 2016',
         content: `<p>
@@ -106,11 +106,11 @@ app.get('/submit-name', function(req, res) { //URL: /submit-name?name=xxxx
     res.send(JSON.stringify(names));
 });
 
-app.get('/:articleName', function(req, res){
-    //articleName == article-one
-    //articles[articleName] == {} content object for article-one
-    var articleName = req.params.articleName;
-    res.send(createTemplate(articles[articleName]));
+app.get('/:poemName', function(req, res){
+    //poemName == poem-one
+    //poems[poemName] == {} content object for article-one
+    var poemName = req.params.poemName;
+    res.send(createTemplate(poems[poemName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
