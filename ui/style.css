@@ -43,20 +43,20 @@ div{
 }
 
 h1 {
-    color: black;
+    color: chocolate;
     font-weight: bold;
     font-size: 200%;
 }
 
 h3 {
-    color: #295f35;
+    color: chocolate;
     font-weight: bold;
-    font-size: 150%;
+    font-size: 250%;
 }
 
 p {
-    color: #295f35;
-    font-size: 100%;
+    color: chocolate;
+    font-size: 200%;
 }
 
 img {
