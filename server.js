@@ -76,7 +76,7 @@ function createTemplate (data) {
             <meta name="viewport" content="width=device-width, intial-scale=1"/>
         </head>
         <body>
-            <div class="container">
+            <div class="poem">
                 <div class="center">
                     <h3>
                         ${heading}
