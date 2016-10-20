@@ -11,7 +11,34 @@ var poems = {
         heading: ' ON THE RED BENCH',
         poets: 'Shradhaa',
         content: `<p>
-                        
+                        Two friends on a red bench
+                        Under the shed
+                        Away from the hustle and bustle
+                        Of daily school.
+                        Listening to silence
+                        In all its glorious muteness
+                        A ginger cat stalks past
+                        Interrupting.
+                        Its bottlebrush tail
+                        Puffed and straight.
+                        A toddler follows
+                        Waddling and wide-eyed.
+                        He must touch
+                        The strange fluffy thing.
+                        The friends watch.
+                        The cat streaks
+                        Up a tree.
+                        The toddler tries
+                        To follow suit.
+                        One friend calls out.
+                        She must.
+                        The child turns
+                        To the next distraction
+                        Waddling and wide-eyed.
+                         The cat has gone
+                        The toddler back to class.
+                        And the friends on the red bench
+                        Listening to silence.
                     </p>`
     },
     'poem-two': {
