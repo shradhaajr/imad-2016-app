@@ -83,7 +83,24 @@ var poems = {
         heading: 'BEHOLD',
         poets: 'Shradhaa, Taruna, Harini',
         content: `<p>
-                        
+                        The search for myself keeps me <br>
+                        Trekking through the dense foliage. <br>
+                        Aching legs and parched throat drain my will; <br>
+                        Burning sun crystallizes the sweat on my brow. <br>
+                        I remember not the last time I saw the others, <br>
+                        Gone are my ties to petty concerns. <br><br>
+                        The cool shade beckons to rest my mind and heart; <br>
+                        Both awake to the sun lightening the mist. <br>
+                        The gentle wind caresses me to life; <br>
+                        Reminiscent of the magic I felt as a child. <br>
+                        As the forest comes to life, <br>
+                        It rekindles the fire to persevere. <br><br>
+                        On and on I walk, fierce in my determination <br>
+                        To complete the seemingly never ending path. <br>
+                        The canopy gives way to a beautiful glen; <br>
+                        My heart pounds at the sight of the pristine lake. <br>
+                        My legs feel leaden as I venture towards it; <br>
+                        Can I dare to behold what I've searched so far for? <br>
                     </p>`
     }
 };
