@@ -34,6 +34,10 @@ body {
                 border-radius: 50%;
 }
 
+.footer {
+    color: darkblue;
+}
+
 div{
     display: block;
     margin: 0 auto;
