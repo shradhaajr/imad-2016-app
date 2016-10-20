@@ -46,7 +46,36 @@ var poems = {
         heading: 'READY TO FLY',
         poets: 'Shradhaa',
         content: `<p>
-                        Somedays I'd think that I'd grown up
+                        Somedays I'd think that I'd grown up<br>
+                        Like when I'd have tea not from my cup <br>
+                        I'd feel like I could take on the world; <br>
+                        My hypothetical wings unfurled; <br>
+                        The first time I rode the bus; <br>
+                        The last time I cried for naught; <br>
+                        I'd felt strangely proud; <br>
+                        To have not been cowed; <br>
+                        By a world seemingly new. <br>
+                        Oh how little I knew! <br>
+                        Today when I'm called on stage; <br>
+                        To step up and grdaduate; <br>
+                        I feel not the erstwhile pride; <br>
+                        That my younger self so cherished in blind; <br>
+                        Fear and doubt creep slow and slow; <br>
+                        I do not wish to grow up anymore. <br>
+                        The allure of freedom spent; <br>
+                        Has never before been so well rent; <br>
+                        Than when we must leave our homes; <br>
+                        And forge our way to our own tombs; <br>
+                        Despite this ill-felt reluctance; <br>
+                        There is a spark of persistnce; <br>
+                        Wherein I feel the inexplicable urge; <br>
+                        To peep around this closed door; <br>
+                        Not minding what may lay ahead; <br>
+                        Friend, foe, fortune or debt. <br>
+                        And so I lurch forward in style; <br>
+                        Still unsure but willing to try; <br>
+                        One finger holding on behind; <br>
+                        But the rest of me quite ready to fly. <br>
                     </p>`
     },
     'poem-three': {
