@@ -27,13 +27,14 @@ body {
                 
                 margin: 0 auto;
                 background-color: linen;
-                padding: 60px 60px 60px 60px;
+                padding: 30px 30px 30px 30px;
                 font-family: sans-serif;
 }
 
 div{
     display: block;
-    padding: 60px 60px 60px 60px;
+    margin: 0 auto;
+    padding: 15px 15px 15px 15px;
     color: #295f35;
     font-weight: bold;
     font-size: 100%;
