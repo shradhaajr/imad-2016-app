@@ -92,6 +92,10 @@ app.get('/contents', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'contents.html'));
 });
 
+app.get('/contact', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'contact.html'));
+});
+
 var names=[];
 app.get('/submit-name', function(req, res) { //URL: /submit-name?name=xxxx
     //get the name from the request object
