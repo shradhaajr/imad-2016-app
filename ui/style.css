@@ -37,6 +37,7 @@ div{
     color: #295f35;
     font-weight: bold;
     font-size: 100%;
+    clear: both;
 }
 
 h1 {
