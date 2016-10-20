@@ -8,29 +8,26 @@ app.use(morgan('combined'));
 var poems = {
     'poem-one': {
         title: 'Poem One| JS',
-        heading: 'Article One',
-        date: 'Sep 5 2016',
+        heading: ' ON THE RED BENCH',
+        poets: 'Shradhaa',
         content: `<p>
-                        This the content for my first article. This the content for my first article. This the content for my first article.
-                    </p>
-                    <p>
-                        This the content for my first article. This the content for my first article. This the content for my first article.
+                        
                     </p>`
     },
-    'article-two': {
-        title: 'Article Two| JS',
-        heading: 'Article Two',
-        date: 'Sep 10 2016',
+    'poem-two': {
+        title: 'Poem Two| JS',
+        heading: 'READY TO FLY',
+        poets: 'Shradhaa',
         content: `<p>
-                        This the content for my second article.
+
                     </p>`
     },
-    'article-three': {
-        title: 'Article Three| JS',
-        heading: 'Article Three',
-        date: 'Sep 15 2016',
+    'poem-three': {
+        title: 'Poem Three| JS',
+        heading: 'BEHOLD',
+        poets: 'Shradhaa, Taruna, Harini',
         content: `<p>
-                        This the content for my third article.
+                        
                     </p>`
     }
 };
@@ -38,7 +35,7 @@ var poems = {
 function createTemplate (data) {
     var title = data.title;
     var heading = data.heading;
-    var date = data.date;
+    var poets = data.poets;
     var content = data.content;
     
     var htmlTemplate= `
