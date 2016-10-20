@@ -11,7 +11,7 @@ var poems = {
         heading: ' ON THE RED BENCH',
         poets: 'Shradhaa',
         content: `<p>
-                        Two friends on a red bench
+                        Two friends on a red bench\n
                         Under the shed
                         Away from the hustle and bustle
                         Of daily school.
