@@ -25,8 +25,7 @@ body {
 .container{
                 max-width: 800px;
                 margin: 0 auto;
-                background-color: beige;
-                background-position: center;
+                background-color: aliceblue;
                 padding-right: 60;
                 padding-left: 60;
                 font-family: sans-serif;
