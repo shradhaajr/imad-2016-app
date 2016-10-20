@@ -34,6 +34,17 @@ body {
                 border-radius: 50%;
 }
 
+.poem{
+                width: 800px;
+                height: 800px;
+                margin: 0 auto;
+                background-color: linen;
+                padding: 30px 30px 30px 30px;
+                font-family: monospace;
+                border-top-left-radius: 40%;
+                border-bottom-right-radius: 40%;
+}
+
 .poet {
     font-style: italic;
 }
