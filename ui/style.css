@@ -32,12 +32,6 @@ body {
                 border-radius: 50%;
 }
 
-#img {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-}
-
 div{
     display: block;
     margin: 0 auto;
@@ -67,4 +61,5 @@ p {
 
 img {
     padding: 20px;
+    size: 
 }
