@@ -26,9 +26,9 @@ body {
                 max-width: 800px;
                 margin: 0 auto;
                 background-color: linen;
-                background-image: url("http://previews.123rf.com/images/wklzzz/wklzzz1106/wklzzz110600012/9697684-Old-antique-vintage-paper-background-Stock-Photo-cover-book-art.jpg");
                 padding: 30px 30px 30px 30px;
                 font-family: sans-serif;
+                border-radius: 40px;
 }
 
 div{
