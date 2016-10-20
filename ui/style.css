@@ -34,6 +34,10 @@ body {
                 border-radius: 50%;
 }
 
+.poet {
+    font-style: italic;
+}
+
 div{
     display: block;
     margin: 0 auto;
