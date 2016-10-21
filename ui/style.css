@@ -116,7 +116,8 @@ textarea {
 
 ul {
     font-size: medium;
-    text-align: justified;
+    color: chocolate;
+    text-align-last: left;
     width: 300px;
     height: 100px;
     margin: 0 auto;
