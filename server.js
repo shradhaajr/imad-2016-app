@@ -166,7 +166,7 @@ app.get('/contact', function (req, res) {
 
 var comments=[];
 app.get('/submit-comment', function(req, res) { //URL: /submit-name?name=xxxx
-    //get the name from the request object
+    //get the comment from the request object
     var comment=req.query.comment;
     
     comments.push(comment);
