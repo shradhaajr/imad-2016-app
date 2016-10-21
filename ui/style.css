@@ -115,9 +115,11 @@ textarea {
 }
 
 ul {
+    text-size: medium;
     width: 300px;
     height: 100px;
     margin: 0 auto;
+    margin-top: 5px;
     padding: 10px;
     overflow: auto;
     border: 1px solid brown;
