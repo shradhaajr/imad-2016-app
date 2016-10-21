@@ -5,7 +5,8 @@ console.log('Loaded!');
 var submit=document.getElementById('submit_btn');
 submit.onclick= function() {
     //make a request to the server and send the name
-    
+    var nameInput=document.getElementById('name');
+    var name=nameInput.value;
      //create request
     var request = new XMLHttpRequest();
     
@@ -21,7 +22,7 @@ submit.onclick= function() {
                 
                 for(var i=0;i<comments.length; i++)
                 {
-                    list += '<li>' + comments[i] + '</li>'; 
+                    list += '<li>' + name+': '+comments[i] + '</li>'; 
                 }
                 
                 var ul = document.getElementById('commentlist');
@@ -33,6 +34,7 @@ submit.onclick= function() {
     //make request
     var commentInput= document.getElementById('comment');
     var comment=commentInput.value;
+    
     request.open('GET', 'http://shradhaajr.imad.hasura-app.io/submit-comment?comment=' + comment, true);
     request.send(null);
     commentInput.value="";
