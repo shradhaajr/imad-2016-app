@@ -40,16 +40,16 @@ submit.onclick= function() {
             //take some action
             if(request.status == 200) {
                 //capture a list of commentss and render it as a list
-                var comments= request.responseText;
-                comments=JSON.parse(comments);
+                var names= request.responseText;
+                comments=JSON.parse(names);
                 var list='';
                 
-                for(var i=0;i<comments.length; i++)
+                for(var i=0;i<names.length; i++)
                 {
-                    list += '<li>' + comments[i] + '</li>'; 
+                    list += '<li>' + names[i] + '</li>'; 
                 }
                 
-                var ul = document.getElementById('commentlist');
+                var ul = document.getElementById('namelist');
                 ul.innerHTML = list;
             }
         }
