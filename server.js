@@ -135,7 +135,7 @@ function createTemplate (data) {
                 <textarea id="comment" placeholder="share your opinion!"></textarea>
                  <br/>
                 <input type="submit" value="Submit" id="submit_btn">
-                <ul id="commentlist">
+                <ul id="commentlist" style="list-style-type: none;">
                 
                 </ul>
             </div>
