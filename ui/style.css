@@ -49,6 +49,10 @@ body {
     font-style: italic;
 }
 
+.footer {
+    color: darkblue;
+}
+
 div{
     display: block;
     margin: 0 auto;
@@ -90,10 +94,11 @@ a {
     
 }
 
-.footer {
-    color: darkblue;
-}
-
 hr {
     margin: 0 auto;
+}
+
+textarea {
+    width: 500px;
+    height: 250px;
 }
