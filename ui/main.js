@@ -25,11 +25,11 @@ button.onclick = function () {
     
 };
 
-//submit comment
+//submit name
 
 var submit=document.getElementById('submit_btn');
 submit.onclick= function() {
-    //make a request to the server and send the comment
+    //make a request to the server and send the name
     
      //create request
     var request = new XMLHttpRequest();
@@ -39,9 +39,9 @@ submit.onclick= function() {
         if(request.readyState == XMLHttpRequest.DONE) {
             //take some action
             if(request.status == 200) {
-                //capture a list of commentss and render it as a list
+                //capture a list of names and render it as a list
                 var names= request.responseText;
-                comments=JSON.parse(names);
+                names=JSON.parse(names);
                 var list='';
                 
                 for(var i=0;i<names.length; i++)
@@ -56,14 +56,8 @@ submit.onclick= function() {
     };
     
     //make request
-    var commentInput=document.getElementById('comment');
-    var comment=commentInput.value;
-    request.open('GET', 'http://shradhaajr.imad.hasura-app.io/submit-comment?comment=' + comment, true);
+    var nameInput= document.getElementById('name');
+    var name=nameInput.value;
+    request.open('GET', 'http://shradhaajr.imad.hasura-app.io/submit-name?name=' + name, true);
     request.send(null);
 };
-
-
-
-
-
-
