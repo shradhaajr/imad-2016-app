@@ -58,7 +58,7 @@ submit.onclick= function() {
     //make request
     var commentInput=document.getElementById('comment');
     var comment=commentInput.value;
-    request.open('GET', 'http://shradhaajr.imad.hasura-app.io/submit-comment?comment=' + comment, true);
+    request.open('GET', 'http://shradhaajr.imad.hasura-app.io/submit-comment?name=' + comment, true);
     request.send(null);
 };
 
