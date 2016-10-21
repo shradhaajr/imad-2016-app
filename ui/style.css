@@ -52,6 +52,8 @@ body {
 .footer {
     color: darkblue;
     background-color: linen;
+    width: 700px;
+    height=75px;
 }
 
 .comment
