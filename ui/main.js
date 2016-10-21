@@ -15,24 +15,24 @@ submit.onclick= function() {
             //take some action
             if(request.status == 200) {
                 //capture a list of names and render it as a list
-                var names= request.responseText;
-                names=JSON.parse(names);
+                var comments= request.responseText;
+                comments=JSON.parse(comments);
                 var list='';
                 
-                for(var i=0;i<names.length; i++)
+                for(var i=0;i<comments.length; i++)
                 {
-                    list += '<li>' + names[i] + '</li>'; 
+                    list += '<li>' + comments[i] + '</li>'; 
                 }
                 
-                var ul = document.getElementById('namelist');
+                var ul = document.getElementById('commentlist');
                 ul.innerHTML = list;
             }
         }
     };
     
     //make request
-    var nameInput= document.getElementById('name');
-    var name=nameInput.value;
-    request.open('GET', 'http://shradhaajr.imad.hasura-app.io/submit-name?name=' + name, true);
+    var commentInput= document.getElementById('comment');
+    var comment=commentInput.value;
+    request.open('GET', 'http://shradhaajr.imad.hasura-app.io/submit-comment?comment=' + comment, true);
     request.send(null);
 };
