@@ -120,4 +120,5 @@ ul {
     margin: 0 auto;
     padding: 10px;
     overflow: auto;
+    border: 1px solid brown;
 }
