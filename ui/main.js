@@ -29,7 +29,7 @@ button.onclick = function () {
 
 var submit=document.getElementById('submit_btn');
 submit.onclick= function() {
-    //make a request to the server and send the name
+    //make a request to the server and send the comment
     
      //create request
     var request = new XMLHttpRequest();
@@ -39,7 +39,7 @@ submit.onclick= function() {
         if(request.readyState == XMLHttpRequest.DONE) {
             //take some action
             if(request.status == 200) {
-                //capture a list of names and render it as a list
+                //capture a list of commentss and render it as a list
                 var comments= request.responseText;
                 comments=JSON.parse(comments);
                 var list='';
