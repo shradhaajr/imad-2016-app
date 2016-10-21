@@ -25,7 +25,7 @@ button.onclick = function () {
     
 };
 
-//submit name
+//submit comment
 
 var submit=document.getElementById('submit_btn');
 submit.onclick= function() {
@@ -40,16 +40,16 @@ submit.onclick= function() {
             //take some action
             if(request.status == 200) {
                 //capture a list of names and render it as a list
-                var names= request.responseText;
-                names=JSON.parse(names);
+                var comments= request.responseText;
+                comments=JSON.parse(comments);
                 var list='';
                 
-                for(var i=0;i<names.length; i++)
+                for(var i=0;i<comments.length; i++)
                 {
-                    list += '<li>' + names[i] + '</li>'; 
+                    list += '<li>' + comments[i] + '</li>'; 
                 }
                 
-                var ul = document.getElementById('namelist');
+                var ul = document.getElementById('commentlist');
                 ul.innerHTML = list;
             }
         }
