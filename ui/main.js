@@ -26,7 +26,8 @@ button.onclick = function () {
 };
 
 //submit comment
-
+var commentInput=document.getElementById('comment');
+var comment=commentInput.value;
 var submit=document.getElementById('submit_btn');
 submit.onclick= function() {
     //make a request to the server and send the comment
