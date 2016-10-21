@@ -130,10 +130,18 @@ function createTemplate (data) {
                     ${content}
                     <p class="poet">${poets}</p>
                 </div>
-                <div class="footer center">
-                    <a href="/">HOME</a>
-                    <a href="/contents">POETRY</a>
-                </div>
+            </div>
+            <div class="comment center">
+                <textarea id="comment" placeholder="share your opinion!"></textarea>
+                 <br/>
+                <input type="submit" value="Submit" id="submit_btn">
+                <ul id="commentlist">
+                
+                </ul>
+            </div>
+            <div class="footer center">
+                <a href="/">HOME</a>
+                <a href="/contents">POETRY</a>
             </div>
             
         </body>
