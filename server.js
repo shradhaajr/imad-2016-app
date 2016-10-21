@@ -143,7 +143,8 @@ function createTemplate (data) {
                 <a href="/">HOME</a>
                 <a href="/contents">POETRY</a>
             </div>
-            
+            <script type="text/javascript" src="/ui/main.js">
+            </script>
         </body>
     </html>
     `;
