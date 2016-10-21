@@ -164,14 +164,14 @@ app.get('/contact', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'contact.html'));
 });
 
-var names=[];
-app.get('/submit-name', function(req, res) { //URL: /submit-name?name=xxxx
+var comments=[];
+app.get('/submit-comment', function(req, res) { //URL: /submit-name?name=xxxx
     //get the name from the request object
-    var name=req.query.name;
+    var comment=req.query.comment;
     
-    names.push(name);
+    comments.push(comment);
     //JSON: Javascript Object Notation
-    res.send(JSON.stringify(names));
+    res.send(JSON.stringify(comments));
 });
 
 app.get('/:poemName', function(req, res){
