@@ -212,7 +212,7 @@ app.get('/submit-comment', function(req, res) { //URL: /submit-name?name=xxxx
     res.send(JSON.stringify(comments));
 });
 
-app.get('/poems/:poemName', function(req, res){
+app.get('/:poemName', function(req, res){
     //poemName == poem-one
     //poems[poemName] == {} content object for article-one
     var poemName = req.params.poemName;
