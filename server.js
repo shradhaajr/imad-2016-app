@@ -19,6 +19,7 @@ var poems = {
     'poem-one': {
         title: 'Poem One| JS',
         heading: ' ON THE RED BENCH',
+        date: '2016-10-29',
         poets: 'Shradhaa',
         content: `<p>
                         Two friends on a red bench <br>
@@ -54,6 +55,7 @@ var poems = {
     'poem-two': {
         title: 'Poem Two| JS',
         heading: 'READY TO FLY',
+        date: '2016-10-29',
         poets: 'Shradhaa',
         content: `<p>
                         Somedays I'd think that I'd grown up<br>
@@ -91,6 +93,7 @@ var poems = {
     'poem-three': {
         title: 'Poem Three| JS',
         heading: 'BEHOLD',
+        date: '2016-10-29',
         poets: 'Shradhaa, Taruna, Harini',
         content: `<p>
                         The search for myself keeps me <br>
@@ -137,6 +140,7 @@ function createTemplate (data) {
                     <h3>
                         ${heading}
                     </h3>
+                    <p>${date.toDateString()}</p>
                     ${content}
                     <p class="poet">${poets}</p>
                 </div>
