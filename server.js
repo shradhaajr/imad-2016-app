@@ -217,7 +217,7 @@ app.get('/poems/:poemName', function(req, res){
     //poems[poemName] == {} content object for article-one
     var poemName = req.params.poemName;
     
-    pool.query("SELECT * FROM poems WHERE title = '"+ req.params.poemName + "'", function(err, result) {
+    pool.query("SELECT * FROM poems WHERE varname = '"+ req.params.poemName + "'", function(err, result) {
         if(err){
             res.status(500).send(err.toString());
         }
