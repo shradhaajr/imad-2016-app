@@ -212,12 +212,12 @@ app.get('/submit-comment', function(req, res) { //URL: /submit-name?name=xxxx
     res.send(JSON.stringify(comments));
 });
 
-app.get('/:poemName', function(req, res){
+app.get('/poetry/:poemName', function(req, res){
     //poemName == poem-one
     //poems[poemName] == {} content object for article-one
     var poemName = req.params.poemName;
     
-    pool.query("SELECT * FROM test", function(err, result) {
+    pool.query("SELECT * FROM poem WHERE varname = '"+ req.params.poemName + "'", function(err, result) {
         if(err){
             res.status(500).send(err.toString());
         }
