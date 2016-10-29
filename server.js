@@ -208,11 +208,26 @@ app.get('/submit-comment', function(req, res) { //URL: /submit-name?name=xxxx
     res.send(JSON.stringify(comments));
 });
 
-app.get('/:poemName', function(req, res){
+app.get('/pomes/:poemName', function(req, res){
     //poemName == poem-one
     //poems[poemName] == {} content object for article-one
     var poemName = req.params.poemName;
-    res.send(createTemplate(poems[poemName]));
+    
+    pool.query("SELECT * FROM poems WHERE title = "+ req.params.poemName, function(err, result) {
+        if(err){
+            res.status(500).send(err.toString());
+        }
+        else{
+            if(result.rows.length === 0){
+                res.status(404).send('Article not found');
+            }
+            else{
+                var poemData = result.rows[0];
+                res.send(createTemplate(poemData));
+            }
+        }
+    });
+    
 });
 
 app.get('/ui/style.css', function (req, res) {
