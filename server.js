@@ -121,6 +121,7 @@ var poems = {
 function createTemplate (data) {
     var title = data.title;
     var heading = data.heading;
+    var date= data.date;
     var poets = data.poets;
     var content = data.content;
     
