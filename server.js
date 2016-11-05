@@ -2,9 +2,6 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var Pool = require('pg').Pool;
-var crypto = require('crypto');
-var bodyparser = require('body-parser');
-var session = require('express-session');
 
 var config = {
     user: 'shradhaajr',
@@ -17,11 +14,6 @@ var config = {
 
 var app = express();
 app.use(morgan('combined'));
-app.use(bodyParser.json());
-ap.use(session({
-    secret: 'someRandomSecretValue',
-    cookie: { maxAge:  1000 * 60 * 60 * 24* 30 }
-}));
 
 function createTemplate (data) {
     var title = data.title;
@@ -74,7 +66,6 @@ function createTemplate (data) {
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-
 
 var pool = new Pool(config);
 app.get('/test-db', function (req, res) {
