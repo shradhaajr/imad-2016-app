@@ -35,13 +35,13 @@ body {
 }
 
 .poem{
-                width: 50%;
-                height: 80%;
+                width: 750px;
+                height: 800px;
                 margin: 0 auto;
                 background-color: linen;
                 padding: 30px 30px 30px 30px;
                 font-family: monospace;
-                
+                border-radius: 10px;
                 
                 margin-bottom: 25px;
 }
