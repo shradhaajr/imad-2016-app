@@ -54,7 +54,7 @@ body {
     color: darkblue;
     font-size: large;
     background-color: linen;
-    width: 700px;
+    width: 600px;
     height: 30px;
     border-radius: 10px;
 }
@@ -62,7 +62,7 @@ body {
 .comment
 {
     background-color: linen;
-    width: 60px;
+    width: 700px;
     height: 250px;
 }
 
