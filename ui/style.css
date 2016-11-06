@@ -4,6 +4,8 @@ body {
     background-image: url("https://s-media-cache-ak0.pinimg.com/736x/b0/cf/72/b0cf728a12f3f06cdbdf620ae3b8e196.jpg");
     background-position: center;
     margin-top: 75px;
+    width: 1000px;
+    height: 1000px;
 }
 
 .center {
@@ -35,8 +37,8 @@ body {
 }
 
 .poem{
-                width: 750px;
-                height: 950px;
+                width: 50%;
+                height: 80%;
                 margin: 0 auto;
                 background-color: linen;
                 padding: 30px 30px 30px 30px;
