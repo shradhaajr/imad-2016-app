@@ -41,19 +41,15 @@ function createTemplate (data) {
             <meta name="viewport" content="width=device-width, intial-scale=1"/>
         </head>
         <body>
-            <div class="poem">
-                <div class="center">
-                    <h3>
+            <div class="poem center">
+                <h3>
                         ${heading}
-                    </h3>
-                    <p>${date.toDateString()}</p>
-                    ${content}
-                    <p class="poet">BY ${poets}</p>
-                </div>
-            </div>
-            <div class="comment center">
+                </h3>
+                <p>${date.toDateString()}</p>
+                ${content}
+                <p class="poet">BY ${poets}</p>
                 <textarea id="comment" placeholder="share your opinion!"></textarea>
-                 <br/>
+                <br/>
                 <input type="submit" value="Submit" id="submit_btn">
                 <ul id="commentlist" style="list-style-type: none;">
                 
