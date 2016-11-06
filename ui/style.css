@@ -68,6 +68,8 @@ body {
 
 div{
     display: block;
+    width: 50%;
+
     margin: 0 auto;
     padding: 15px 15px 15px 15px;
     color: chocolate;
