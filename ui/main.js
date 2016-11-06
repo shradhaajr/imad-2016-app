@@ -41,8 +41,8 @@ submit.onclick= function() {
 
 //------------------------------------------------------------------------------
 //submit username/password
-var submit=document.getElementById('submit_btn_login');
-submit.onclick= function() {
+var login=document.getElementById('submit_btn_login');
+login.onclick= function() {
     //make a request to the server and send the name
     
      //create request
