@@ -42,7 +42,7 @@ body {
                 padding: 30px 30px 30px 30px;
                 font-family: monospace;
                 border-radius: 10px;
-                
+                position: relative;
                 margin-bottom: 25px;
 }
 
