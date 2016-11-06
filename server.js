@@ -75,6 +75,11 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.get('/hash/:input', function(req, res) {
+   var hashedString = hash(req.params.input, 'this-is-some-random-string');
+   res.send(hashedString);
+});
+
 var pool = new Pool(config);
 app.get('/test-db', function (req, res) {
     //make a select request
