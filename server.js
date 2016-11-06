@@ -122,7 +122,7 @@ app.post('/login', function (req, res) {
               if (hashedPassword === dbString) {
                 
                 // Set the session
-                req.session.auth = {userId: result.rows[0].id};
+               // req.session.auth = {userId: result.rows[0].id};
                 // set cookie with a session id
                 // internally, on the server side, it maps the session id to an object
                 // { auth: {userId }}
@@ -137,7 +137,7 @@ app.post('/login', function (req, res) {
    });
 });
 
-app.get('/check-login', function (req, res) {
+/*app.get('/check-login', function (req, res) {
    if (req.session && req.session.auth && req.session.auth.userId) {
        // Load the user object
        pool.query('SELECT * FROM "user" WHERE id = $1', [req.session.auth.userId], function (err, result) {
@@ -155,7 +155,7 @@ app.get('/check-login', function (req, res) {
 app.get('/logout', function (req, res) {
    delete req.session.auth;
    res.send('Successfully logged out');
-});
+});*/
 
 var pool = new Pool(config);
 app.get('/test-db', function (req, res) {
