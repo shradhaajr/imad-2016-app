@@ -76,6 +76,86 @@ app.get('/', function (req, res) {
 });
 
 
+function hash(input, salt){
+    //how do we create a hash?
+    var hashed = crypto.pbkdf2Sync(input, salt, 10000, 512, 'sha512');
+    return ["pbkdf2Sync", "10000", salt, hashed.toString('hex')].join('$');
+}
+
+app.get('/hash/:input', function(req,res) {
+   var hashedString = hash(req.params.input, 'this-is-some-random-string');
+   res.send(hashedString);
+});
+
+app.post('/creat-user', function(req,res){
+   //username, password
+   // {"username": "shradhaajr", "password": "password"}
+   //JSON 
+   var username = req.body.username;
+   var password = req.body.password;
+   
+   var salt = crypto.randomBytes(128).toString('hex');
+   var dbString = hash(password, salt);
+   pool.query('INSERT INTO "user" (username, password) VALUES ($1, $2)', [username, dbString], function(err, result){
+       if(err){
+            res.status(500).send(err.toString());
+        } 
+        else{
+            res.send('User successfully created: '+ username);
+        }
+   });
+   
+});
+
+app.post('/login', function(req,res){
+    var username = req.body.username;
+    var password = req.body.password;
+ 
+    pool.query('SELECT * FROM "user" WHERE username = $1', [username], function(err, result){
+        if(err){
+             res.status(500).send(err.toString());
+         } 
+         else{
+             if(result.rows.length === 0){
+                 res.send(403).send('username/password is invalid');
+             }else {
+                 //match the password
+                 var dbString = result.rows[0].password;
+                 var salt = dbString.split('$')[2];
+                 var hashedPassword = hash(password, salt); //creating a hash based on the password submitted and the original salt
+                 if(hashedPassword === dbString){
+                     
+                     //set a session
+                     req.session.auth = {userId: result.rows[0].id};
+                     //set cookie with a session id
+                     //internally, on the server side, it maps the session id to an object
+                     //{ auth:  { userId}}
+                     
+                     
+                     res.send('Successfully logged in!');
+                     
+                 }else {
+                     res.status(403).send('username/password is invalid');
+                 }
+                 
+             }
+             
+         }
+    });
+});
+
+app.get('/check-login', function(req,res){
+if(req.session && req.session.auth && rq.session.auth.userId){
+    res.send('You are logged in: '+ req.session.auth.userId.toString());
+} else{
+    res.send('you are not logged in');
+}
+});
+
+app.get('/logout', function(req,res){
+   delete req.session.auth;
+   res.send('logged out');
+});
 
 var pool = new Pool(config);
 app.get('/test-db', function (req, res) {
