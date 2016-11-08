@@ -33,6 +33,12 @@ body {
                 border-radius: 10px;
 }
 
+.content
+{
+    font-size: x-large;
+    font-weight: bold;
+}
+
 .poet {
     font-style: italic;
 }
@@ -98,14 +104,4 @@ a {
 textarea {
     width: 300px;
     height: 150px;
-}
-
-ul {
-    font-size: medium;
-    color: brown;
-    max-width: 500px;
-    margin: 0 auto;
-    margin-top: 5px;
-    padding: 10px;
-    overflow: auto;
 }
