@@ -42,13 +42,7 @@ body {
     color: darkblue;
 }
 
-.comment
-{
-    background-color: linen;
-    margin-left: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ccc;
-}
+
 
 div{
     display: block;
