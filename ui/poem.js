@@ -1,17 +1,17 @@
-// Eg: coco98.imad.hasura-app.io/articles/article-one will result in article-one
-var currentArticleTitle = window.location.pathname.split('/')[2];
+// Eg: shradhaajr.imad.hasura-app.io/poemss/poem-one will result in poem-one
+var currentPoemTitle = window.location.pathname.split('/')[2];
 
 function loadCommentForm () {
     var commentFormHtml = `
         <h5>Submit a comment</h5>
-        <textarea id="comment_text" rows="5" cols="100" placeholder="Enter your comment here..."></textarea>
+        <textarea id="comment_text" rows="5" cols="100" placeholder="Share your opinion!"></textarea>
         <br/>
         <input type="submit" id="submit" value="Submit" />
         <br/>
         `;
     document.getElementById('comment_form').innerHTML = commentFormHtml;
     
-    // Submit username/password to login
+    // Submit comment
     var submit = document.getElementById('submit');
     submit.onclick = function () {
         // Create a request object
@@ -34,7 +34,7 @@ function loadCommentForm () {
         
         // Make the request
         var comment = document.getElementById('comment_text').value;
-        request.open('POST', '/submit-comment/' + currentArticleTitle, true);
+        request.open('POST', '/submit-comment/' + currentPoemTitle, true);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({comment: comment}));  
         submit.value = 'Submitting...';
@@ -90,7 +90,7 @@ function loadComments () {
         }
     };
     
-    request.open('GET', '/get-comments/' + currentArticleTitle, true);
+    request.open('GET', '/get-comments/' + currentPoemTitle, true);
     request.send(null);
 }
 
