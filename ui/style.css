@@ -31,7 +31,7 @@ body {
                 padding-left: 20px;
                 padding-right: 20px;
                 font-family: monospace;
-                
+                border-radius: 50%;
 }
 
 .poem{
@@ -54,8 +54,7 @@ body {
     color: darkblue;
     font-size: large;
     background-color: linen;
-    width: 600px;
-    height: 30px;
+    max-width: 750px;
     border-radius: 10px;
 }
 
