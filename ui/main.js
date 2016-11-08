@@ -118,14 +118,11 @@ function loadPoems () {
                 var content = '<ul>';
                 var poemData = JSON.parse(this.responseText);
                 for (var i=0; i< poemData.length; i++) {
-                    content += `<li>
-                    <a href="/poems/${poemData[i].varname}">${poemData[i].heading}</a>
-                    (${poemData[i].date.split('T')[0]})</li>`;
+                    content += `<a href="/poems/${poemData[i].varname}" style="text-decoration:none;">${poemData[i].heading}</a>(${poemData[i].date.split('T')[0]})<br/>`;
                 }
-                content += "</ul>"
                 poems.innerHTML = content;
             } else {
-                poems.innerHTML('Oops! Could not load all articles!')
+                poems.innerHTML('Oops! Could not load all articles!');
             }
         }
     };
@@ -140,45 +137,3 @@ function loadPoems () {
 loadLogin();
 
 loadPoems();
-
-//--------------------------------------------------------------------------------------
-/*
-//submit comment
-
-var submit=document.getElementById('submit_btn');
-submit.onclick= function() {
-    //make a request to the server and send the name
-    
-     //create request
-    var request = new XMLHttpRequest();
-    
-    //capture the response and store it variable
-    request.onreadystatechange = function () {
-        if(request.readyState == XMLHttpRequest.DONE) {
-            //take some action
-            if(request.status == 200) {
-                //capture a list of comments and render it as a list
-                var comments= request.responseText;
-                comments=JSON.parse(comments);
-                var list='';
-                
-                for(var i=comments.length-1;i>=0; i--)
-                {
-                    list += '<li>' + comments[i] + '</li>'; 
-                }
-                
-                var ul = document.getElementById('commentlist');
-                ul.innerHTML = list;
-            }
-        }
-    };
-    
-    //make request
-    var commentInput= document.getElementById('comment');
-    var comment=commentInput.value;
-    
-    request.open('GET', 'http://shradhaajr.imad.hasura-app.io/submit-comment?comment=' + comment, true);
-    request.send(null);
-    commentInput.value="";
-};
-*/
