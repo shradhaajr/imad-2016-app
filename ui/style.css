@@ -36,7 +36,6 @@ body {
 .content
 {
     font-size: x-large;
-    font-weight: bold;
 }
 
 .poet {
@@ -94,7 +93,7 @@ img {
 }
 
 a {
-    font-size: large;
+    font-size: inherit;
     font-variant: small-caps;
     color: inherit;
     padding: 15px;
