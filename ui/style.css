@@ -36,7 +36,6 @@ body {
 
 .poem{
                 max-width: 750px;
-                
                 margin: 0 auto;
                 background-color: linen;
                 padding-left: 20px;
@@ -51,10 +50,6 @@ body {
 
 .footer {
     color: darkblue;
-    font-size: large;
-    background-color: linen;
-    max-width: 750px;
-    border-radius: 10px;
 }
 
 .comment
