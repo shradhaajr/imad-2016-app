@@ -107,7 +107,39 @@ function loadLogin () {
     request.send(null);
 }
 
+
+function loadPoems () {
+        // Check if the user is already logged in
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+        if (request.readyState === XMLHttpRequest.DONE) {
+            var poems = document.getElementById('poems');
+            if (request.status === 200) {
+                var content = '<ul>';
+                var poemData = JSON.parse(this.responseText);
+                for (var i=0; i< poemData.length; i++) {
+                    content += `<li>
+                    <a href="/poems/${poemData[i].varname}">${poemData[i].heading}</a>
+                    (${poemData[i].date.split('T')[0]})</li>`;
+                }
+                content += "</ul>"
+                poems.innerHTML = content;
+            } else {
+                poems.innerHTML('Oops! Could not load all articles!')
+            }
+        }
+    };
+    
+    request.open('GET', '/get-poems', true);
+    request.send(null);
+}
+
+
+
+
 loadLogin();
+
+loadPoems();
 
 //--------------------------------------------------------------------------------------
 /*
