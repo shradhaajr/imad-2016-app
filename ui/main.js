@@ -115,12 +115,11 @@ function loadPoems () {
         if (request.readyState === XMLHttpRequest.DONE) {
             var poems = document.getElementById('poems');
             if (request.status === 200) {
-                var content = '<div class="content">';
+                var content = '';
                 var poemData = JSON.parse(this.responseText);
                 for (var i=0; i< poemData.length; i++) {
                     content += `<a href="/poems/${poemData[i].varname}" style="text-decoration:none;">${poemData[i].heading}</a>(${poemData[i].date.split('T')[0]})<br><br>`;
                 }
-                content+='</div>';
                 poems.innerHTML = content;
             } else {
                 poems.innerHTML('Oops! Could not load all articles!');
