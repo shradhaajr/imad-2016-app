@@ -150,8 +150,7 @@ app.get('/check-login', function (req, res) {
 
 app.get('/logout', function (req, res) {
    delete req.session.auth;
-   alert('Successfully logged out');
-   request.open('GET', '/', true);
+   res.send("Successfully logged out<br/><a src='/'>Return to Home</a>");
    
 });
 
