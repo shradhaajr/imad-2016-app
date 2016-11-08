@@ -57,7 +57,7 @@ function createTemplate (data) {
                 <div id="comments" class="center">
                     <center>Loading comments...</center>
                 </div>
-                </hr>
+                <hr/>
                 <div class="footer center">
                     <a href="/">HOME</a>
                     <a href="/contents">POETRY</a>
