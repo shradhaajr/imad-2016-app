@@ -42,16 +42,10 @@ body {
     color: darkblue;
 }
 
-
-
 div{
     display: block;
     margin: 0 auto;
-    padding: 15px 15px 15px 15px;
     color: chocolate;
-    font-weight: bold;
-    font-size: 100%;
-    
 }
 
 h1 {
@@ -83,10 +77,6 @@ a {
     color: inherit;
     padding: 15px;
     
-}
-
-hr {
-    margin: 0 auto;
 }
 
 textarea {
