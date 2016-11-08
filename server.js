@@ -140,7 +140,7 @@ app.get('/check-login', function (req, res) {
            if (err) {
               res.status(500).send(err.toString());
            } else {
-              res.send('You are logged in: '+result.rows[0].id);    
+              res.send(result.rows[0].username+'! You are now logged in!');    
            }
        });
    } else {
