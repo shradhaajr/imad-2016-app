@@ -115,7 +115,7 @@ function loadPoems () {
         if (request.readyState === XMLHttpRequest.DONE) {
             var poems = document.getElementById('poems');
             if (request.status === 200) {
-                var content = '<ul>';
+                var content = '';
                 var poemData = JSON.parse(this.responseText);
                 for (var i=0; i< poemData.length; i++) {
                     content += `<a href="/poems/${poemData[i].varname}" style="text-decoration:none;">${poemData[i].heading}</a>(${poemData[i].date.split('T')[0]})<br/>`;
