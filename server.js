@@ -51,7 +51,7 @@ function createTemplate (data) {
                     <p class="poet">BY ${poets}</p>
                 </div>
                 <hr/>
-                <h4>Comments</h4>
+                <h3>Comments</h3>
                 <div id="comment_form" class="center">
                 </div>
                 <div id="comments" class="center">
