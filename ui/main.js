@@ -118,7 +118,7 @@ function loadPoems () {
                 var content = '<div class="content"';
                 var poemData = JSON.parse(this.responseText);
                 for (var i=0; i< poemData.length; i++) {
-                    content += `<a href="/poems/${poemData[i].varname}" style="text-decoration:none;">${poemData[i].heading}</a>(${poemData[i].date.split('T')[0]})<br/>`;
+                    content += `<a href="/poems/${poemData[i].varname}" style="text-decoration:none;">${poemData[i].heading}</a>(${poemData[i].date.split('T')[0]})<br>`;
                 }
                 content+='</div>';
                 poems.innerHTML = content;
