@@ -62,8 +62,9 @@ body {
 .comment
 {
     background-color: linen;
-    width: 700px;
-    height: 250px;
+    margin-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
 }
 
 div{
