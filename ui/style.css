@@ -103,12 +103,9 @@ textarea {
 ul {
     font-size: medium;
     color: brown;
-    text-align-last: left;
-    width: 300px;
-    height: 100px;
+    max-width: 500px;
     margin: 0 auto;
     margin-top: 5px;
     padding: 10px;
     overflow: auto;
-    border: 1px solid brown;
 }
