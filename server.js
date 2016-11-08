@@ -54,10 +54,10 @@ function createTemplate (data) {
                 <ul id="commentlist" style="list-style-type: none;">
                 
                 </ul>
-            </div>
-            <div class="footer center">
-                <a href="/">HOME</a>
-                <a href="/contents">POETRY</a>
+                <div class="footer">
+                    <a href="/">HOME</a>
+                    <a href="/contents">POETRY</a>
+                </div>
             </div>
             <script type="text/javascript" src="/ui/main.js">
             </script>
