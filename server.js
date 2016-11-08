@@ -194,22 +194,6 @@ app.get('/get-comments/:poemName', function (req, res) {
    });
 });
 
-app.get('/poems/:poemName', function (req, res) {
-  // SELECT * FROM poem WHERE title = '\'; DELETE WHERE a = \'asdf'
-  pool.query("SELECT * FROM poem WHERE varname = $1", [req.params.poemName], function (err, result) {
-    if (err) {
-        res.status(500).send(err.toString());
-    } else {
-        if (result.rows.length === 0) {
-            res.status(404).send('Poem not found');
-        } else {
-            var poemData = result.rows[0];
-            res.send(createTemplate(poemData));
-        }
-    }
-  });
-});
-
 app.post('/submit-comment/:poemName', function (req, res) {
    // Check if the user is logged in
     if (req.session && req.session.auth && req.session.auth.userId) {
@@ -239,6 +223,22 @@ app.post('/submit-comment/:poemName', function (req, res) {
     } else {
         res.status(403).send('Only logged in users can comment');
     }
+});
+
+app.get('/poems/:poemName', function (req, res) {
+  // SELECT * FROM poem WHERE title = '\'; DELETE WHERE a = \'asdf'
+  pool.query("SELECT * FROM poem WHERE varname = $1", [req.params.poemName], function (err, result) {
+    if (err) {
+        res.status(500).send(err.toString());
+    } else {
+        if (result.rows.length === 0) {
+            res.status(404).send('Poem not found');
+        } else {
+            var poemData = result.rows[0];
+            res.send(createTemplate(poemData));
+        }
+    }
+  });
 });
 
 app.get('/ui/:fileName', function (req, res) {
