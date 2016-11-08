@@ -34,16 +34,6 @@ body {
                 border-radius: 10px;
 }
 
-.poem{
-                max-width: 750px;
-                margin: 0 auto;
-                background-color: linen;
-                padding-left: 20px;
-                padding-right: 20px;
-                font-family: monospace;
-                border-radius: 10px;
-}
-
 .poet {
     font-style: italic;
 }
