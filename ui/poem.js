@@ -3,7 +3,7 @@ var currentPoemTitle = window.location.pathname.split('/')[2];
 
 function loadCommentForm () {
     var commentFormHtml = `
-        <h5>Submit a comment</h5>
+        <h4>Submit a comment</h4>
         <textarea id="comment_text" rows="5" cols="100" placeholder="Share your opinion!"></textarea>
         <br/>
         <input type="submit" id="submit" value="Submit" />
