@@ -3,6 +3,7 @@ body {
     background-color: rgb(245, 245, 220);
     background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3HHpSFqpjXq1Frp-AzCCXKdHNsdrolk4Y8Er7PUZaz0M0CuC7");
     background-position: center;
+    background-size: 100% 100%;
     margin-top: 75px;
 }
 
