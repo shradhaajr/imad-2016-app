@@ -26,12 +26,11 @@ body {
 
 .container{
                 max-width: 750px;
-                max-height: 750px;
                 margin: 0 auto;
                 background-color: linen;
                 padding: 20px 20px 20px 20px;
                 font-family: monospace;
-                border-radius: 50%;
+                border-radius: 25px;
                 border-style: double;
                 border-width: thick;
                 border-color: black;
