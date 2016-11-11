@@ -30,7 +30,7 @@ body {
                 background-color: linen;
                 padding: 20px 20px 20px 20px;
                 font-family: monospace;
-                border-radius: 25px;
+                border-radius: 50%;
                 border-style: double;
                 border-width: thick;
                 border-color: black;
