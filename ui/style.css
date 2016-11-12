@@ -65,9 +65,10 @@ body {
 }
 
 #comment_form {
-    margin-left: 10px;
+    margin: 0 auto;
     padding-bottom: 10px;
     border-bottom: 1px solid #ccc;
+    width: 80%;
 }
 
 div{
