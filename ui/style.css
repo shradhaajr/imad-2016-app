@@ -67,7 +67,7 @@ body {
 .title {
     color: rgb(141,22,13);
     font-family: cursive;
-    position: fixed;
+    
     top: 20px;
     left: 30px;
 }
