@@ -29,6 +29,7 @@ function createTemplate (data) {
     var date= data.date;
     var poets = data.poets;
     var content = data.content;
+    var imgurl = data.imgurl;
     
     var htmlTemplate= `
     <html>
@@ -45,6 +46,9 @@ function createTemplate (data) {
                 <a class="title" href="/" style="text-decoration:none;">POESY</a>
             </div>
             <div class="container center">
+                <div id="img" class="center">
+                <img src="${imgurl}" class="img-medium"/>
+                </div>
                 <h3>
                         ${heading}
                 </h3>
