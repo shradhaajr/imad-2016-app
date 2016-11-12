@@ -67,9 +67,6 @@ body {
 .title {
     color: rgb(141,22,13);
     font-family: cursive;
-    
-    top: 10px;
-    left: 10px;
 }
 
 #comment_form {
