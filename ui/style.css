@@ -97,8 +97,7 @@ h3 {
 p {
     color: chocolate;
     font-size: large;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 10px 10px 10px 10px;
 }
 
 img {
