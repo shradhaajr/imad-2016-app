@@ -66,11 +66,11 @@ body {
 
 .title {
     color: rgb(141,22,13);
-    font-family: cursive;
+    font-family: monospace;
     position: absolute;
     top: 0;
     left: 0;
-    font-size: x-large;
+    font-size: large;
     font-weight: bold;
     border-style: double;
     border-radius: 10px;
