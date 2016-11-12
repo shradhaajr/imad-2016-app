@@ -64,6 +64,11 @@ body {
     font-size: 0.8em;
 }
 
+.title {
+    color: rgb(141,22,13);
+    font-family: cursive;
+}
+
 #comment_form {
     margin: 0 auto;
     padding-bottom: 10px;
